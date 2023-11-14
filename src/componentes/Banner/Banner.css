@@ -1,10 +1,9 @@
 .banner {
     background-color: red;
+   
 }
 
 .banner {
-    width: 100%;
-}
-.banner{
-    align-items: center;
+    min-width: 100%;
+    text-align: center;
 }
