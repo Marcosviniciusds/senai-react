@@ -1,0 +1,36 @@
+.botao {
+    background-color: #6278f7;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    margin: 32px 160px;
+}
+
+.botao:hover {
+    color: #ffa0a0;
+}
+.botao{
+    box-shadow: 10px 10px 30px rgb(153, 153, 233)
+}
+.botao {
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    animation: mudarCor 1.5s infinite alternate; /* 5 segundos de duração, repetição infinita */
+  }
+
+  /* Define a animação para mudar a cor */
+  @keyframes mudarCor {
+    0% {
+      background-color: #3498db; /* Cor inicial */
+    }
+    100% {
+      background-color: #0419db; /* Cor final */
+    }
+  }
