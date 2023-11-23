@@ -16,22 +16,12 @@ const Formulario = (props) => {
     const aoSalvar = (evento) => {
         evento.preventDefault()
        props.aoColaboradorCasdastro({
-
             nome,
             cargo,
             imagem,
             times
         })
     }
-    const Times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
 
     return (
         <section className='formulario'>
@@ -66,7 +56,11 @@ const Formulario = (props) => {
                 />
 
 
-                <ListaSuspensa label="Times" itens={Times} />
+                <ListaSuspensa label="Times" 
+                itens={props.times} 
+                valor={times}
+                aoAlterado={valor=> setTimes(valor)}
+                />
                 <Botao>𝘊𝘢𝘥𝘢𝘴𝘵𝘳𝘢𝘳</Botao>
             </form>
         </section>
