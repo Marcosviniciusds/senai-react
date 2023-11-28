@@ -3,11 +3,19 @@ import CampoTexto from '../Campotexto'
 import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 
 
 const Formulario = (props) => {
+
+    const ClicarLink = useNavigate();
+    const handleClick = () => {
+        ClicarLink('tela2/');
+
+    };
+
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -62,6 +70,8 @@ const Formulario = (props) => {
                 aoAlterado={valor=> setTimes(valor)}
                 />
                 <Botao>𝘊𝘢𝘥𝘢𝘴𝘵𝘳𝘢𝘳</Botao>
+                <button onClick={ handleClick} click aqui  >  </button>
+                
             </form>
         </section>
 
